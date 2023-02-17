@@ -7,10 +7,9 @@ jobs:
     steps:
     - uses: actions/checkout@1.0.0
     
-    - name: Create pull request
-      uses: thomaseizinger/create-pull-request@master
+    - name: Automatically Create Pull Requests
+      uses: BaharaJr/create-pr@0.0.1
+
       with:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-        head: ${{ github.ref }}
-        base: master
         title: "An automatically created PR!"
