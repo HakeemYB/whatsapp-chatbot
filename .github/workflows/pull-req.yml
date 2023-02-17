@@ -12,4 +12,4 @@ jobs:
 
       with:
         GITHUB_TOKEN: ${{ secrets.GIT_TOKEN }}
-        title: "An automatically created PR!"
+        DESTINATION_BRANCH: "master"
